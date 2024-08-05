@@ -1,12 +1,12 @@
 from query import Query
 
 
-class CreateHistoryDatabase:
+class CreateWarehouse:
     def __init__(self, db_path: str, db_file_directory: str, db_file_count: str) -> None:
         pass
 
 
-class HistoryDB:
+class Warehouse:
     def __init__(self, db_path: str) -> None:
         pass
 

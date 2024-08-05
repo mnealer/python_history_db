@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Aggregate(ABC):
+class Annotation(ABC):
 
     def __init__(self, field):
         self.field = field
@@ -13,5 +13,3 @@ class Aggregate(ABC):
     @abstractmethod
     def outer_function(self):
         pass
-
-

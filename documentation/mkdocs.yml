@@ -1,0 +1,42 @@
+site_name: Python History Database
+site_description: A file Based Historical and analysis database
+site_url: https://marcnealer.gitlab.io/historical-database
+theme:
+  logo: assets/banner.png
+  favicon: assets/wt.png
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    primary: blue grey
+    accent: light green
+plugins:
+  - search
+extra_css: [stylesheets/extra.css]
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - pymdownx.critic
